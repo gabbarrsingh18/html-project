@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <style>
+        table{
+            width:80℅;
+            cellpadding:7;
+            cellspacing:5;
+            text-align:center;
+            border:2px solid black;
+        }
+        
+        thead{
+            background-color:navy;
+            color:white;
+        }
+        
+        tbody{
+            background-color:lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+            <th colspan="5">Student Information System</th>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td rowspan="2">Shrawan</td>
+                <td rowspan="2">6th</td>
+                <td>Math</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td rowspan="2">Sreyansh</td>
+                <td rowspan="2">6th</td>
+                <td>English</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>Conputer</td>
+                <td>98</td>
+            </tr>
+            <th colspan="4">Avarage Mark</th>
+            <th>92</th>
+        </tbody>
+    </table>
+</body>
+</html>

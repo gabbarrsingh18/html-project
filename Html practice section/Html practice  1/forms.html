@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form in html</title>
+</head>
+<body bgcolor="lavender">
+    <h1>Student registration form</h1>
+    
+    
+    <form>
+    <fieldset>
+        
+        <legend>Registration form</legend>        
+            <input type="text"value="🇮🇳India"disabled>
+            <br> <br>
+            
+            
+            <label>College</label>
+            <input type="text" value="Rajkiya Mahavidhyalaya Ramsari,Ghatampur,Kanpur Nagar" readonly>
+            <br> <br>
+            
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="enter your name" required autofocus>
+           <br> <br>
+           
+            <label for="father name">Father Name:</label>
+            <input type="text" id="father name" placeholder="enter your father's name">
+            <br> <br>
+            <label for="course" name="course">Course:</label>
+            <select id="course" required>
+                <option>Select Course</option>
+                <option>B-Tech</option>
+                <option>BCA</option>
+                <option>BSc(CS)</option>
+            </select>
+            <br> <br>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" >
+            <br> <br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" minlength="6" maxlength="8" required>
+            <br> <br>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="enter your age" min="5" max="10"> 
+            <br> <br>
+            
+            <label>Gender:</label>           
+            <input type="radio" name="gender" checked>
+            <label>Male</label>
+            <input type="radio" name="gender">
+            <label>Female</label>            
+            <input type="radio" name="gender">
+            <label>Other</label>
+            <br> <br>
+            
+            
+            <label>Skill:</label>
+            <input type="checkbox" name="skill">
+            <label>Studying</label>
+            <input type="checkbox" name="skill">
+            <label>Gaming</label>
+            <input type="checkbox" name="skill">
+            <label>Coding</label>
+            <input type="checkbox" name="skill">
+            <label>All</label>
+            <br> <br>
+            
+           
+            <label>DOB:</label> 
+            <input type="date" required>
+            <br> <br>
+            
+            <label>Date & Time</label>
+            <input type="datetime-local">
+            <br> <br>
+            
+            <label>favorite color:</label>
+            <input type="color">
+            <br> <br>
+            
+            <label>Web links:</label>
+            <input type="url">
+            <br> <br>
+            
+            <label>Contact No. </label>
+            <input type="tel" max-length="10" required>
+            <br> <br>      
+            
+            
+            <input type="file" multiple>        
+            <br> <br>           
+            
+            
+            <label>massage:</label>  
+            <textarea rows="4" cols="20"> </textarea> 
+            <br> <br>
+           
+            
+            <input type="submit">
+            <br> <br>
+           
+            <input type="reset">            
+        
+    </fieldset>
+    </form>
+</body>
+</html>

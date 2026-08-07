@@ -1,0 +1,22 @@
+*{
+  font-family:Courier New;
+}
+
+#facebook{
+  font-family:courier 'Courier New', Courier, monospace;
+  color:#1b74e4;
+}
+
+.search{
+  background-color:black;
+  color:white;
+}
+
+label{
+  text-transform:Capitalize;
+}
+
+.button{
+  text-transform:capitalize;
+  background-color:aqua;
+}

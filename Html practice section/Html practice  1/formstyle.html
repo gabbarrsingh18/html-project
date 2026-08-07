@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Student Registration Form</title>
+</head>
+<body style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%); margin: 0; padding: 30px 15px; display: flex; justify-content: center; align-items: center; min-height: 100vh; color: #333333;">
+
+    <div style="width: 100%; max-width: 650px; background: #ffffff; padding: 35px 30px; border-radius: 16px; box-shadow: 0 10px 30px rgba(14, 25, 44, 0.08); box-sizing: border-box;">
+        
+        <!-- Professional Header Zone -->
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h1 style="color: #0f172a; margin: 0 0 8px 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">Student Registration</h1>
+            <p style="color: #64748b; margin: 0; font-size: 14px;">Please fill in the official details to complete your enrollment</p>
+        </div>
+        
+        <form>
+            <!-- Fieldset Styled as a Modern Borderless Container -->
+            <fieldset style="border: none; padding: 0; margin: 0;">
+                <legend style="display: block; width: 100%; font-size: 16px; font-weight: 600; color: #2563eb; border-bottom: 2px solid #eff6ff; padding-bottom: 10px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 0.5px;">Registration Form</legend>        
+                    
+                <!-- Country (Disabled State) -->
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 13px; color: #475569;">Nationality</label>
+                    <input type="text" value="🇮🇳 India" disabled style="width: 100%; padding: 12px 14px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; background-color: #f1f5f9; color: #64748b; font-weight: 500; cursor: not-allowed;">
+                </div>
+                
+                <!-- College (Readonly State) -->
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 13px; color: #475569;">Assigned College</label>
+                    <input type="text" value="Rajkiya Mahavidhyalaya Ramsari, Ghatampur, Kanpur Nagar" readonly style="width: 100%; padding: 12px 14px; border: 1px solid #e2e8f0; border-radius: 8px; box-sizing: border-box; background-color: #f8fafc; color: #334155; font-size: 13.5px;">
+                </div>
+                
+                <!-- Name -->
+                <div style="margin-bottom: 20px;">
+                    <label for="name" style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 13px; color: #475569;">Full Name <span style="color: #ef4444;">*</span></label>
+                    <input type="text" id="name" placeholder="Enter your full name" required autofocus style="width: 100%; padding: 12px 14px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; font-size: 14px; transition: border-color 0.2s; outline: none; background-color: #fff;">
+                </div>
+               
+                <!-- Father's Name -->
+                <div style="margin-bottom: 20px;">
+                    <label for="father_name" style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 13px; color: #475569;">Father's Name</label>
+                    <input type="text" id="father_name" placeholder="Enter your father's name" style="width: 100%; padding: 12px 14px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; font-size: 14px; outline: none;">
+                </div>
+
+                <!-- Course Selection -->
+                <div style="margin-bottom: 20px;">
+                    <label for="course" style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 13px; color: #475569;">Course Stream <span style="color: #ef4444;">*</span></label>
+                    <select id="course" required style="width: 100%; padding: 12px 14px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; font-size: 14px; background-color: #fff; outline: none; color: #333; cursor: pointer;">
+                        <option value="">Select Course</option>
+                        <option>B-Tech</option>
+                        <option>BCA</option>
+                        <option>BSc(CS)</option>
+                    </select>
+                </div>
+                
+                <!-- Email -->
+                <div style="margin-bottom: 20px;">
+                    <label for="email" style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 13px; color: #475569;">E-mail Address</label>
+                    <input type="email" id="email" placeholder="example@domain.com" style="width: 100%; padding: 12px 14px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; font-size: 14px; outline: none;">
+                </div>
+                
+                <!-- Password -->
+                <div style="margin-bottom: 20px;">
+                    <label for="password" style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 13px; color: #475569;">Password <span style="color: #ef4444;">*</span></label>
+                    <input type="password" id="password" minlength="6" maxlength="8" placeholder="6 to 8 characters" required style="width: 100%; padding: 12px 14px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; font-size: 14px; outline: none;">
+                </div>
+                
+                <!-- Age -->
+                <div style="margin-bottom: 20px;">
+                    <label for="age" style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 13px; color: #475569;">Age (Allowed: 5 - 10)</label>
+                    <input type="number" id="age" placeholder="Enter age" min="5" max="10" style="width: 100%; padding: 12px 14px; border: 1px solid #cbd5e1; border-radius: 8px; box-sizing: border-box; font-size: 14px; outline: none;"> 
+                </div>
+                
+                <!-- Gender (Badges Grid Layout) -->
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 8px; font-weight: 600; font-size: 13px; color: #475569;">Gender</label>           
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                        <label style="flex: 1; min-width: 100px; display: flex; align-items: center; justify-content: center; padding: 10px; border: 1px solid #e2e8f0; border-radius: 8px; background: #f8fafc; cursor: pointer; font-size: 14px; font-weight: 500;">
+                            <input type="radio" name="gender" checked style="margin-right: 8px; accent-color: #2563eb;"> Male
+                        </label>
+                        <label style="flex: 1; min-width: 100px; display: flex; align-items: center; justify-content: center; padding: 10px; border: 1px solid #e2e8f0; border-radius: 8px; background: #f8fafc; cursor: pointer; font-size: 14px; font-weight: 500;">
+                            <input type="radio" name="gender" style="margin-right: 8px; accent-color: #2563eb;"> Female
+                        </label>            
+                        <label style="flex: 1; min-width: 100px; display: flex; align-items: center; justify-content: center; padding: 10px; border: 1px solid #e2e8f0; border-radius: 8px; background: #f8fafc; cursor: pointer; font-size: 14px; font-weight: 500;">
+                            <input type="radio" name="gender" style="margin-right: 8px; accent-color: #2563eb;"> Other
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Skills (Badges Grid Layout) -->
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 8px; font-weight: 600; font-size: 13px; color: #475569;">Primary Skills / Interests</label>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <label style="display: flex; align-items: center; padding: 8px 14px; border: 1px solid #e2e8f0; border-radius: 20px; background: #fff; cursor: pointer; font-size: 13.5px; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
+                            <input type="checkbox" name="skill" style="margin-right: 6px; accent-color: #2563eb;"> Studying
+                        </label>
+                        <label style="display: flex; align-items: center; padding: 8px 14px; border: 1px solid #e2e8f0; border-radius: 20px; background: #fff; cursor: pointer; font-size: 13.5px; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
+                            <input type="checkbox" name="skill" style="margin-right: 6px; accent-color: #2563eb;"> Gaming
+                        </label>
+                        <label style="display: flex; align-items: center; padding: 8px 14px; border: 1px solid #e2e8f0; border-radius: 20px; background: #fff; cursor: pointer; font-size: 13.5px; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
+                            <input type="checkbox" name="skill" style="margin-right: 6px; accent-color: #2563eb;"> Coding
+                        </label>
+                        <label style="display: flex; align-items: center; padding: 8px 14px; border: 1px solid #e2e8f0; border-radius: 20px; background: #fff; cursor: pointer; font-size: 13.5px; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
+                            <input type="checkbox" name="skill" style="margin-right: 6px; accent-color: #2563eb;"> All
+                        </label>
+                    </div>
+                </div>
+               
+                <!-- DOB -->
+                <div style="margin-bottom: 20px;">
