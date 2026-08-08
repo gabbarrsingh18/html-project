@@ -1,13 +1,16 @@
+/*universal selector*/
 *{
   font-family:Courier New;
 }
 
-#facebook{
-  font-family:courier 'Courier New', Courier, monospace;
+/* Elements selector */
+h1{
+/*font-family:courier 'Courier New', Courier, monospace;*/
   color:#1b74e4;
 }
 
-.search{
+/* Id selector */
+#searchbtn{
   background-color:black;
   color:white;
 }
@@ -16,7 +19,12 @@ label{
   text-transform:Capitalize;
 }
 
+/* Class selector */
 .button{
   text-transform:capitalize;
   background-color:aqua;
+}
+
+#searchbtn:hover{
+  background-color: indianred;
 }
