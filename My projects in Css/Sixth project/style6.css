@@ -1,0 +1,37 @@
+#container{
+  width: 200px;
+  height: 200px;
+  border: 4px solid black;
+  Border-radius:50%;
+  background-color:#db9718;
+}
+
+.mouth{
+  width: 100px;
+  height: 25px;
+  border: 4px solid black;
+  background-color: darkred;
+  display: inline-block;
+  position: absolute;
+  top: 130px;
+  left: 60px;
+  border-radius: 5px 5px 40px 40px;
+}
+
+#left-eye, #right-eye{
+  width: 20px;
+  height: 20px;
+  border: 4px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: black;
+  margin: 10px;
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  }
+  
+  #left-eye{
+    left: 60px;
+    
+  }

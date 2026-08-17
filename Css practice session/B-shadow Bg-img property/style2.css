@@ -1,0 +1,20 @@
+div{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  color: papayawhip;
+  margin: 10px auto;
+  background-color: forestgreen;
+  border: 2px solid black;
+  box-shadow: 2px 2px 8px black;
+}
+
+#div{
+  width: 400px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 0 5 0 5;
+  background-image: url(nature.jpg);
+  background-size: cover;
+}
+

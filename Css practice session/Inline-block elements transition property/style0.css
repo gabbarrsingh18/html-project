@@ -1,0 +1,41 @@
+h1{
+   background-color:pink;
+   display: inline;
+}
+
+button{
+   background-color: lightskyblue;
+   display: block;
+   margin: 10px;
+}
+
+.div{
+   background-color: yellowgreen;
+   border:2px solid black;
+   margin: 2px;
+   height: 50px;
+   width: 50px;
+   padding: 20px;
+   color: red;
+   display: inline-block;
+}
+
+/* transition in css */
+
+#div{
+   background-color: forestgreen;
+   height: 50px;
+   width: 50px;
+   margin: 0 auto;
+   margin-top: 10px;
+   /*transition-duration: 1s;
+   transition-delay: 1s; */
+   transition:margin-top 2s ease-in 0.2s;
+}
+
+#div:hover , #div:active{
+   margin-top: 100px;
+   background-color: pink;
+   border: 2px solid black;
+   border-radius: 50%;
+}
